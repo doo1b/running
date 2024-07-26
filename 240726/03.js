@@ -18,10 +18,11 @@ const student = {
 
   
   // 얕은 복사를 수행하여 shallowCopy를 만들어주세요.
-  const shallowCopy = {...student};
+  const shallowCopy = student;
   
   // 깊은 복사를 수행하여 deepCopy를 만들어주세요.
   const deepCopy = deep(student);
+  // structuredClone 이것도 깊은 복사 함수
   
   // 얕은 복사 객체와 원본 객체를 비교하여 출력해주세요
   console.log("1. 원본 객체(student)와 얕은 복사 객체가 같을까요?", student === shallowCopy); 

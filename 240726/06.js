@@ -14,6 +14,8 @@ const students = [
 
 // 여기에 코드를 작성해주세요
 
+// 배열 메소드를 쓰면 배열취급 체이닝이 가능하다. ex) arr.map().reduce().every() 는 불리언 타입이라 끝에 배열 메소드 못씀
+
 var answer =
 
 students
