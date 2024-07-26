@@ -18,7 +18,7 @@ const student = {
 
   
   // 얕은 복사를 수행하여 shallowCopy를 만들어주세요.
-  const shallowCopy = student;
+  const shallowCopy = {...student};
   
   // 깊은 복사를 수행하여 deepCopy를 만들어주세요.
   const deepCopy = deep(student);
