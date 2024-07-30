@@ -2,19 +2,19 @@
 const API_URL = "https://open.api.com/v1/data";
 const WRONG_URL = "https://open.api.com/v1/wrong";
 
-const promis = async (url) => {
+function promise(url) {
     return new Promise((resolve, reject) => {
     setTimeout(() => {
         if ( url === API_URL ) {
             resolve("성공")
         } else reject ("실패")
     }, 3000);
-})
+});
 }
 
 async function getData(url) {
     try {
-    const answer = await promis(url);
+    const answer = await promise(url);
     console.log(answer);
     } catch (error) {
         console.error(error);
